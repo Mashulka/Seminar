@@ -1,0 +1,14 @@
+{
+  "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "UcbfZ2ZI5pffkjHH6ti8OtYEulJv5QmMkCOCNL58O4032LQ0IAr8/HH0Myv3x+KJcfxJTfTddwlNglkps/JmdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mariy\\OneDrive\\Рабочий стол\\My new seminars C#\\HomeWorks\\Lesson1\\Lesson1.csproj",
+=======
+  "dgSpecHash": "5w+uoE75ZecwpxhvbXG5IEENemcyOiVf+C7cvKAQm77YX2NROuICCwQAVxB3Wn1VLASNAQFOAJi1t5polrpKqw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mariy\\OneDrive\\Рабочий стол\\My new seminars C#\\Seminars\\Seminar1\\Seminar1.csproj",
+>>>>>>> 3cd04e8fd7730a8332823a5c26421f4b151e58e9
+  "expectedPackageFiles": [],
+  "logs": []
+}
