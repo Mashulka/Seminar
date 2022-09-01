@@ -102,10 +102,10 @@ else
 
 // Задача. Напишите программу, которая по заданному номеру четверти показывает диапазон возможных координат точек в этой четверти (x и y).
 
-void FindCoordinats(int quart);
+void FindCoordinats (int quart)
 {
     if (quart == 1)
-    Console.WriteLine($"Диапазон (x+, y+)");
+    Console.WriteLine("Диапазон (x+, y+)");
     if (quart == 2)
     Console.WriteLine($"Диапазон (x-, y+)");
     if (quart == 3)
@@ -114,5 +114,5 @@ void FindCoordinats(int quart);
     Console.WriteLine($"Диапазон (x+, y-)");
 }
 Console.Write("Input number of quart: ");
-int quart = Convert.ToInt32(Console.ReadLine);
+int quart = Convert.ToInt32(Console.ReadLine());
 FindCoordinats(quart);
