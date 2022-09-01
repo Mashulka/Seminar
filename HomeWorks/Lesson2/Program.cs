@@ -39,3 +39,65 @@ else Console.WriteLine("(день выходной) - > нет");
 }
 DayWeek(dayNumber);
 */
+/*
+// Задача 19. Напишите программу, которая принимает на  вход пятизначное число и проверяет, является ли оно палиндромом
+
+Console.WriteLine("Задача 19");
+Console.Write("Введите пятизначное число: ");
+string? number = Console.ReadLine();
+
+void CheckingNumber(string number)
+{
+    if (number [0] == number [4] || number [1] == number [3])
+    {
+        Console.WriteLine($"Введенное пятизначное число: {number} - да");  
+    }
+    else Console.WriteLine ($"Введенное пятизначное число {number} - нет");   
+}
+
+if (number!.Length == 5)
+{
+    CheckingNumber(number);
+}
+else Console.WriteLine($"Введите пятизначное число");
+*/
+/*
+// Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+int x1 = Coordinate("x", "A");
+int y1 = Coordinate("y", "A");
+int z1 = Coordinate("z", "A");
+int x2 = Coordinate("x", "B");
+int y2 = Coordinate("y", "B");
+int z2 = Coordinate("z", "B");
+
+int Coordinate(string coorName, string pointName)
+{
+     Console.Write($"Введите координату {coorName} точки {pointName}: ");
+     return Convert.ToInt32(Console.ReadLine());
+}
+
+double Coordinats(double x1, double x2, double y1, double y2, double z1, double z2)
+{
+     return Math.Sqrt(Math.Pow((x2-x1), 2) +  Math.Pow((y2-y1), 2) +  Math.Pow((z2-z1), 2));
+}
+
+double segmentLength = Math.Round (Coordinats(x1, x2, y1, y2, z1, z2), 2 );
+Console.WriteLine($"Длина отрезка {segmentLength}");
+*/
+/*
+// Задача 23. Напишите программу, которая принимает на вход число N и выдает таблицу кубов чисел от 1 до N
+
+void cube(int n)
+{
+    int current = 1;
+    while(current <= n)
+    {
+        Console.WriteLine($"Куб числа {current} = {current * current * current}");
+        current++;
+    }
+}
+Console.Write("Введите любое целое число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+cube(number);
+*/
