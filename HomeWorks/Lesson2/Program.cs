@@ -117,7 +117,7 @@ for (int i = 1; i < b; i++)
 
 Console.WriteLine("A в степени B равно: " + step);
 */
-
+/*
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
 Console.WriteLine("Введите число: ");
@@ -132,3 +132,26 @@ while (i > 0)
 }
 
 Console.WriteLine("Сумма цифр в числе равна: " + sum);
+*/
+/*
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
+    
+Console.Write("Введите массив: ");
+string? seriesOfNumbers = Console.ReadLine();
+
+int [] numbers = new int[8];
+Console.Write("[");
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers [i] = new Random().Next(0, 35);
+    Console.Write(" " + Method (i) + " ");
+}
+Console.Write("]");
+
+int Method (int a)
+{
+    return numbers[a];
+}
+*/
