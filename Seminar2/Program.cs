@@ -153,8 +153,8 @@ Console.Write("Введите любое целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ShowSquare(number);
 */
-
-// Задача. Напишите программу, которая принимает на вход некоторое число и возвращает сумму всех чисел от 1 до этого числа.
+/*
+// Задача 1. Напишите программу, которая принимает на вход некоторое число и возвращает сумму всех чисел от 1 до этого числа.
 
 int FindSum(int number)
 {
@@ -167,3 +167,70 @@ Console.Write("Input integer number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int result = FindSum(a);
 Console.WriteLine($"Sum of numbers from 1 to {a} is {result}");
+*/
+/*
+// Задача 2. Напишите программу, клторая на вход принимает число и выдает количество цифр в числе.
+
+int FindDigits(int number)
+{
+    int current = 0;
+    while (number > 0) 
+    {
+        number = number / 10;
+        current++;
+    }
+    return current;
+}
+
+Console.Write("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine ());
+
+Console.WriteLine($"Количество цифр в числе {a} = {FindDigits (a)}");
+*/
+/*
+// Задача 3. Напишите программу, которая принимает на вход число N и выдает произведение чисел от 1 до N.
+
+int FindFactorial(int number)
+{
+    int factorial = 1;
+    for(int current = 1; current <= number; current++)
+    {
+        factorial = current * factorial;
+    }
+    return factorial;
+}
+
+Console.Write("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Произведение чисел от 1 до {a} = {FindFactorial (a)}");
+*/
+/*
+// Задача 4. Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] newArray = new int[size];
+    for (int i = 0; i < size; i++)
+        newArray[i] = new Random().Next(minValue, maxValue + 1);
+
+    return newArray;    
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + "");
+
+    Console.WriteLine();        
+}
+
+Console.Write("Input size for array: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value fo element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value fo element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(a, min, max);
+ShowArray(myArray);
+*/
