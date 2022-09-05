@@ -1,6 +1,6 @@
-﻿/*
-// Задача. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
+﻿// Задача. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
 
+/*
 int FindBiggestDigit(int number)
 {
     int ed = number % 10;
@@ -153,3 +153,17 @@ Console.Write("Введите любое целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ShowSquare(number);
 */
+
+// Задача. Напишите программу, которая принимает на вход некоторое число и возвращает сумму всех чисел от 1 до этого числа.
+
+int FindSum(int number)
+{
+    int sum = 0;
+    for (int current = 1; current <= number; current++) ;
+    sum = sum + current;
+    return sum;
+}
+Console.Write("Input integer number: ");
+int a = Convert.ToInt32(Console.ReadLine());
+int result = FindSum(a);
+Console.WriteLine($"Sum of numbers from 1 to {a} is {result}");
