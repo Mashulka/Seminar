@@ -155,3 +155,115 @@ int Method (int a)
     return numbers[a];
 }
 */
+/*
+// Задача 34. Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+
+Console.WriteLine("Input size for array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] numbers = new int[size];
+int count = 0;
+FillArrayRandomNumbers(numbers);
+WriteArray(numbers);
+
+{
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] % 2 == 0) count++;
+    }
+}
+
+Console.WriteLine($"The number of even numbers in the array -> {count} ");
+
+void FillArrayRandomNumbers(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(100, 1000);
+    }
+}
+
+void WriteArray(int[] numbers)
+{
+    Console.Write("[ ");
+    for(int i = 0; i < numbers.Length; i++)
+    {
+        Console.Write(numbers[i] + " ");
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
+*/
+/*
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+Console.Write($"Input the number of array elements: ");
+int numberElements = Convert.ToInt32(Console.ReadLine()); 
+
+int RandomNumbers(int numberElements, int min, int max)
+{
+  int[] randomNumbers = new int[numberElements];
+  int sumElements = 0;
+  Console.Write("array: ");
+
+    for (int i = 0; i < randomNumbers.Length; i++)
+    {
+      randomNumbers[i] = new Random().Next(min, max);
+      Console.Write(randomNumbers[i] + " ");
+
+      if (i % 2 ! = 1)
+      {
+        sumElements = sumElements + randomNumbers[i];
+      }
+    }
+  return sumElements;
+}
+
+int randomNumbers =  RandomNumbers(numberElements, 1, 10);
+
+Console.WriteLine($"Sum elements: {randomNumbers}");
+*/
+/*
+// Задача 38. Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.
+
+int size = 10;
+int[] numbers = new int[size];
+FillArrayRandomNumbers(numbers);
+WriteArray(numbers);
+
+int max = numbers[0];
+int min = numbers[0];
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > max)
+    {
+        max = numbers[i];
+    }
+    else if (numbers[i] < min)
+    {
+        min = numbers[i];
+    }
+}
+
+Console.WriteLine($"Min number: {min}");
+Console.WriteLine($"Max number: {max}");
+Console.WriteLine($"The difference between the max and min: {max-min}");
+
+void FillArrayRandomNumbers(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(1, 555);
+    }
+}
+
+
+void WriteArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+*/
