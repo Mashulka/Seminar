@@ -419,3 +419,117 @@ int result = CountElements(myArray, min1, max1);
 
 Console.WriteLine($"Количество элементов массива, находящихся в заданном отрезке равно {result}");
 */
+/*
+// Урок 6. 
+// Задача 1. Необходимо написать программу, которая перевернет одномерный массив.
+
+int[] ReversArray(int[] array)
+{
+    for(int i = 0; i < array.Length/2; i++)
+    {
+        int temp = array[i];
+        array[i] = array[array.Length -1 -i];
+        array[array.Length -1 -i] = temp;
+    }
+    return array;
+}
+
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] newArray = new int[size];
+    for(int i = 0; i < size; i++)
+       newArray[i] = new Random().Next(minValue, maxValue +1);
+    return newArray;   
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();        
+}
+
+Console.Write("Input size for array: ");
+int size = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input min possible value of element: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input max possible value of element: ");
+int max = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = CreateRandomArray(size, min, max);
+ShowArray(myArray);
+ShowArray(ReversArray(myArray));
+*/
+/*
+// Задача 2. Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник со сторонами такой длины. a < b + c
+
+bool CheckTriangle(int a, int b, int c)
+{
+    if ((a + b > c) && (a + c > b) && (b + c > a)) return true;
+    else return false;
+}
+
+Console.Write("Input first length: ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second length: ");
+int y = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input three length: ");
+int z = Convert.ToInt32(Console.ReadLine());
+
+bool result = CheckTriangle(x, y, z);
+if (result == true) Console.WriteLine($"Triagle with sides: {x}, {y}, {z} exists");
+else Console.WriteLine ($"Triagle with sides: {x}, {y}, {z} does not exists");
+*/ 
+/*
+// Задача 3. Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: a и b.
+
+int[] Fibonacci(int firstNumber, int secondNumber, int size)
+{
+    int[] array = new int[size];
+    array[0] = firstNumber;
+    array[1] = secondNumber;
+    for(int i = 2; i < size; i++)
+    {
+        array[i] = array[i - 2] + array[i - 1];
+    }
+    return array;
+}
+
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+Console.Write("Input first number: ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input second number: ");
+int y = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input array size: ");
+int z = Convert.ToInt32(Console.ReadLine());
+
+ShowArray(Fibonacci(x, y, z));
+*/
+/*
+// Задача 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+
+void DecinalToBinary(int number)
+{
+    string result = string.Empty;
+    while (number > 0)
+    {
+        result = number % 2 + result;
+        number /= 2;
+    }
+    Console.WriteLine(result);
+} 
+
+Console.Write("Input decinal number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.Write($"Number {num} to binaty is ");
+DecinalToBinary(num);
+*/
