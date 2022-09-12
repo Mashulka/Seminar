@@ -267,3 +267,67 @@ void WriteArray(int[] array)
     Console.WriteLine();
 }
 */
+/*
+// Задача 41. Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+Console.Write("Input numbers: ");
+int[] numbers = StringToNumber(Console.ReadLine());
+
+int sum = 0;
+for (int i = 0; i < numbers.Length; i++)
+    {
+    if (numbers[i] > 0) sum++;
+    }
+
+Console.WriteLine();
+Console.WriteLine($"the number of numbers greater 0 = {sum}");
+
+int[] StringToNumber(string input)
+{
+    int count = 1;
+    for (int i = 0; i < input.Length; i++)
+    {
+        if (input[i] == ',') count++;
+    }
+
+    int[] numbers = new int [count];
+    int index = 0;
+
+    for (int i = 0; i < input.Length; i++)
+    {
+        string temp = " ";
+        while (input [i] != ',')
+        {
+        if(i != input.Length - 1)
+          {
+            temp += input [i].ToString();
+            i++;
+          }
+        else
+          {
+            temp += input [i].ToString();
+          }
+        }
+        numbers[index] = Convert.ToInt32(temp);
+        index++;
+    }
+    return numbers;
+}
+*/
+/*
+// Задача 43. Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+Console.Write("input meaning b1: ");
+double b1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("input meaning k1: ");
+double k1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("input meaning b2: ");
+double b2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("input meaning k2: ");
+double k2 = Convert.ToInt32(Console.ReadLine());
+
+double x = (-b2 + b1)/(-k1 + k2);
+double y = k2 * x + b2;
+
+Console.WriteLine($"coordinates of the intersection point: {x}, {y}");
+*/
