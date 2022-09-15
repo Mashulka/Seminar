@@ -331,3 +331,110 @@ double y = k2 * x + b2;
 
 Console.WriteLine($"coordinates of the intersection point: {x}, {y}");
 */
+/*
+// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+
+Console.Write("Введите m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+double[,] array = new double[m, n];
+
+RandomArrayDouble(array);
+ShowArray(array);
+
+void RandomArrayDouble(double[,] array)
+{
+  for (int i = 0; i < m; i++)
+  {
+    for (int j = 0; j < n; j++)
+    {
+      array[i, j] = new Random().NextDouble() * 20 - 10;
+    }
+  }
+}
+
+void ShowArray (double[,] array)
+{
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            double Number = Math.Round(array[i, j], 1);
+            Console.Write(Number + " ");
+        }
+        Console.WriteLine();
+    }
+}
+*/
+/*
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
+nt m = ReadInt("Input rows: ");
+int n = ReadInt("Input columns: ");
+int[,] numbers = new int[m, n];
+FillArray(numbers);
+PrintArray(numbers);
+
+if (m < numbers.GetLength(0) && n  < numbers.GetLength (1));
+   
+else Console.WriteLine($"{m}{n} -> такого числа в массиве нет");
+
+void FillArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+ 
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+*/
+/*
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+Random random  = new Random ();
+int[,] arr = new int[random.Next(1, 8), random.Next(1, 8)];
+for (int i = 0; i < arr.GetLength(0); i++)
+{
+    for (int j = 0; j < arr.GetLength(1); j ++)
+    {
+        arr[i, j] = random.Next(1, 8);
+        Console.Write(arr[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+Console.WriteLine("---------------------------");
+Console.WriteLine(arr.GetLength(0));
+for (int j = 0; j < arr.GetLength(1); j++)
+{
+    double sum = 0;
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        sum += arr[i, j];
+    }
+    Console.Write($"{ sum / arr.GetLength(0)} ");
+}
+Console.ReadLine();
+*/
