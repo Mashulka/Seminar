@@ -1,0 +1,15 @@
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\bin\Debug\net6.0\Lesson8.exe
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\bin\Debug\net6.0\Lesson8.deps.json
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\bin\Debug\net6.0\Lesson8.runtimeconfig.json
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\bin\Debug\net6.0\Lesson8.dll
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\bin\Debug\net6.0\Lesson8.pdb
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.csproj.AssemblyReference.cache
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.AssemblyInfoInputs.cache
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.AssemblyInfo.cs
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.csproj.CoreCompileInputs.cache
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.dll
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\refint\Lesson8.dll
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.pdb
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\Lesson8.genruntimeconfig.cache
+C:\Users\mariy\OneDrive\Рабочий стол\My new seminars C#\HomeWorks\Lesson8\obj\Debug\net6.0\ref\Lesson8.dll
